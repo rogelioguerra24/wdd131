@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: acme, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	background-color: #333333; /* Gris oscuro */
+    color: #ffffff;
+	padding: 0.5rem;
+	color: #fff;
+	height: 5rem;
+}
+
+footer {
+	text-align: center;
+	background-color: #333333; /* Gris oscuro */
+    color: #ffffff;
+	padding: 0.5rem;
+	color: #fff;
+	height: 7rem;
+}
+
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+	
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #000000; /* Negro */
+    color: #ffffff;
+}
+
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+	height: 3rem;
+}
+.section {
+	flex: 1;
+	display: flex;
+}
+main {
+	padding: 0.5rem;
+	text-align: center;
+	background-color: #d3d3d3; /* Gris claro */
+	color: #000000;
+	width: 80%;
+	height: 15rem;
+}
+aside {
+	padding: 0.5rem;
+	text-align: center;
+	background-color: #ffffff; /* Blanco */
+	color: #000000;
+	width: 20%;
+	height: 15rem;
+}
