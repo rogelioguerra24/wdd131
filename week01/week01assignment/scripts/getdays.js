@@ -6,3 +6,4 @@ year.innerHTML = `${today.getFullYear()}`;
 const lastModified = document.lastModified;
 const last = document.querySelector("#lastModified")
 last.innerHTML = `${lastModified}`;
+/*comment*/
