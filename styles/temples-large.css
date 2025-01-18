@@ -1,0 +1,36 @@
+@media (min-width: 800px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+    main { 
+        margin: 1rem auto; 
+        max-width: 800px; 
+        padding: .5rem;
+    }
+
+    /*For erase and mantain the navigation bar in the computer screen*/
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+    /*To erase the part of the three lines in the page*/
+    #menu::before {
+        content: none;
+    }
+    #menu.show::before {
+	content: none;
+    }
+	
+}
+
+

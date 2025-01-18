@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+    font-family: "Playfair Display", serif;
+}
+/*This is teh first part of the code, decoration of the phone view*/
+
+header {
+    font-family: "Playfair Display", serif;
+	background-color: #DCE0D9;
+	display: grid;
+	padding: 20px;
+	box-shadow: 0 0 30px #6B0F1A;
+}
+
+/*This is the part of the design of the headers*/
+h1 {
+    font-family: "Mystery Quest", serif;
+	font-size: 2.5rem;
+    color: black;
+}
+h2{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/*This is for organizing the images and the caption of the page*/
+div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+figcaption{
+    text-align: center;
+}
+div {
+	margin: 0 0 1rem;
+}
+
+/*This is for the design with JavaScript*/
+#menu {
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+    
+}
+/*This is for the three lines in the page to make it absolute in the top right of the page*/
+#menu::before {
+	content: "≡";
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem; 
+    font-size: 2rem; 
+}
+#menu.show::before {
+	content: "X";
+}
+
+/*The navigation part of the page*/
+nav {
+	background-color: #31081F;
+    font-family: "Playfair Display", serif;
+}
+.navigation {
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.navigation a:hover, navigation a:active {
+	text-decoration: lightseagreen;
+	background-color: #eee;
+	color: #000;
+}
+.show li {
+	display: block;
+}
+
+/*This is for the design of the footer*/
+footer {
+    background-color: #31081F;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    height: 7rem;
+    padding: 1rem ;
+}
