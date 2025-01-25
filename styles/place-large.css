@@ -41,6 +41,7 @@
         display: none;
     }
 
-    
-
+    .emoji::after{
+        content: '🌥️';
+    }
 }
