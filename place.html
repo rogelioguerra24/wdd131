@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rogelio Guerra">
+    <meta name="description" content="Place page of Rogelio Guerra WDD131">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oldenburg&display=swap" rel="stylesheet">
+    <title> Place Page | WDD131 </title>
+</head>
+<body>
+    <header>
+        <h1>Macchu Picchu</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 500px)">
+            <img src="images/hero-small.webp" alt="Macchu Picchu" >
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area: </dt>
+                <dd>1.285 millions km²</dd>
+                <dt>Population: </dt>
+                <dd>34,000,000</dd>
+                <dt>Capital: </dt>
+                <dd>Lima City</dd>
+                <dt>Languages: </dt>
+                <dd>Spanish, Quechua, Aymara</dd>
+                <dt>Currency: </dt>
+                <dd>Peruvian 'Sol'</dd>
+                <dt>Time Zone:</dt>
+                <dd>PET</dd>
+                <dt>Calling Code: </dt>
+                <dd>+51</dd>
+                <dt>Internet TLD: </dt>
+                <dd>.pe</dd>
+            </dl>
+
+        </section>
+
+        <section class="great-weather">
+            <h2 class="without-emoji">Weather</h2>
+            <h2 class="emoji"> Weather🌥️</h2>
+            <img class="weather" src="images/icon.svg" alt="weather icon" width="300"> 
+            <dl> 
+                <dt>Temperature: </dt>
+                <dd>22 °C</dd>
+                <dt>Conditions: </dt>
+                <dd>Mostly Cloudy</dd>
+                <dt>Wind: </dt>
+                <dd>18 km/h</dd>
+                <dt>Wind Chill: </dt>
+                <dd><span id="windchill"></span></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; <span id="currentyear"></span> | Rogelio Lizardo Guerra Cespedes | Peru</p>
+        <p> Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

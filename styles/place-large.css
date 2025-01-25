@@ -1,0 +1,50 @@
+/*Computer View*/
+
+@media screen and (min-width: 500px) {
+    main {
+        position: relative;
+    }
+    
+    picture img {
+        display: block;
+    }
+
+    .data{
+        position: absolute;
+        width: 25%;
+        top: 10px;
+        left: 10px;
+        box-shadow: 0 0 30px #02394A;
+    }
+
+    .great-weather{
+        position: absolute;
+        width: 25%;
+        bottom: 10px;
+        right: 10px;
+        box-shadow: 0 0 30px #02394A;
+    }
+
+    h2{
+        background-color: #02394A;
+        color: white;
+        border-bottom: none;
+        padding: 10px;
+    }
+
+    section{
+        font-size: 100%;
+        
+    }
+
+    .weather{
+        display: none;
+    }
+    .emoji{
+        display: block;
+    }
+
+    .without-emoji{
+        display: none;
+    }
+}

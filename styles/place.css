@@ -1,0 +1,98 @@
+/* Mobile View*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*This part is for the font of the document*/
+header {
+    font-family: "Oldenburg", serif;
+}
+
+main,
+footer {
+    font-family: "Old Standard TT", serif;
+
+}
+
+header {
+    background-color: #02394A;
+    padding: 20px;
+    border-bottom: 10px solid #92DCE5;
+}
+
+/* This part is for the headers of the page*/
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+    border-bottom: 0.1px solid black;
+}
+
+/* This is for editing the part of the main of the code */
+img {
+    width: 100%;
+    border-bottom: 10px solid #92DCE5;
+}
+
+.weather {
+    border-bottom: none;
+    width: 50%;
+    margin-top: 0;
+}
+
+.emoji{
+    display: none;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+section {
+    padding: 20px;
+    background-color: #F4F4F9;
+    margin: 1em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1.6rem;
+
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+
+    margin: 0 auto;
+}
+
+dd {
+    text-align: left;
+    color: black;
+}
+
+
+
+/*This code bellow is for the desing of the footer, there's no more neccesary*/
+footer {
+    background-color: #02394A;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
