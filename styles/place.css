@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #92DCE5;
+    --secondary-color: #F4F4F9;
+    --background-color: #02394A;
+    --text-color: black;
+  }
+
 /* Mobile View*/
 
 * {
@@ -18,9 +25,9 @@ footer {
 }
 
 header {
-    background-color: #02394A;
+    background-color: var(--background-color);
     padding: 20px;
-    border-bottom: 10px solid #92DCE5;
+    border-bottom: 10px solid var(--primary-color);
 }
 
 /* This part is for the headers of the page*/
@@ -33,13 +40,13 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    border-bottom: 0.1px solid black;
+    border-bottom: 0.1px solid var(--text-color);
 }
 
 /* This is for editing the part of the main of the code */
 img {
     width: 100%;
-    border-bottom: 10px solid #92DCE5;
+    border-bottom: 10px solid var(--primary-color);
 }
 
 .weather {
@@ -48,9 +55,7 @@ img {
     margin-top: 0;
 }
 
-.emoji{
-    display: none;
-}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -83,14 +88,12 @@ dt {
 
 dd {
     text-align: left;
-    color: black;
+    color: var(--text-color);
 }
-
-
 
 /*This code bellow is for the desing of the footer, there's no more neccesary*/
 footer {
-    background-color: #02394A;
+    background-color: var(--background-color);
     font-size: 1.5rem;
     color: white;
     text-align: center;

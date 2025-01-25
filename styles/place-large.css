@@ -40,11 +40,9 @@
     .weather{
         display: none;
     }
-    .emoji{
-        display: block;
+    
+    .emoji::after{
+        content: '🌥️';
     }
 
-    .without-emoji{
-        display: none;
-    }
 }
