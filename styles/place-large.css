@@ -41,8 +41,6 @@
         display: none;
     }
 
-    .emoji::after{
-        content: 'xd';
-    }
+    
 
 }
