@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    place-items: center; /* Centra horizontal y verticalmente */
+    height: auto; /* Altura del contenedor */
+    background-color: #e0e0e0;
+  }
+  
+  img {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    animation: fade 15s;
+    width: 400px;
+    height: 600px;
+  }
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
