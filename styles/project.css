@@ -1,0 +1,50 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+:root{
+    --primary-color: #92DCE5;
+    --secondary-color: #78A1BB;
+    --background-color: #283044;
+    --text-color: #EBF5EE;
+}
+h1{
+    font-size: 50px;
+} 
+h2{
+    font-family: "Bebas Neue", serif;
+    font-size: 35px;
+}
+
+p{
+    font-family: "Old Standard TT", serif;
+    font-size: 25px;
+}
+
+main{
+    max-width: 800px;
+    text-align: center;
+}
+
+h1{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+section{
+    padding: 10px;
+}
+
+.figures {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+}
+
+figure{
+    padding: 10px;
+}
+img{
+    max-width: 100%;
+}
