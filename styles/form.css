@@ -22,9 +22,6 @@ body{
     padding: 1em;
 }
 
-main{
-    margin: 0 0 1em;
-}
 
 /*Header of the form*/
 header{
@@ -38,7 +35,7 @@ header{
 
 /*This is form the main form*/
 form{
-    margin: 0;
+    margin: 0 0 1em;
     display: grid;
     font-family: var(--font-family-paragraph);
     background-color: var(--secondary-color);

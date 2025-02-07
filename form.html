@@ -19,75 +19,68 @@
         <h1>Product Review</h1>
     </header>
 
-    <main>
-        <form method='get' action="review.html">
+    <form method='get' action="review.html">
 
-            <!--Select Element-->
-            <label for="product">Product Name</label>
-            <select id="product" name="product" class="section">
-                <!--Example: <option value="playstation5">PlayStation 5</option>-->
-            </select>
+        <!--Select Element-->
+        <label for="product">Product Name</label>
+        <select id="product" name="product" class="section">
+            <!--Example: <option value="playstation5">PlayStation 5</option>-->
+        </select>
 
-            <!--Overall Rating-->
-            <fieldset class="rating-section">
-                <legend>Overall Rating</legend>
-            
-                <label for="rating-1" class="rating-label">
-                    <input type="radio" id="rating-1" name="rating" value="1" required> ★
-                </label>
-            
-                <label for="rating-2" class="rating-label">
-                    <input type="radio" id="rating-2" name="rating" value="2" required> ★★
-                </label>
-            
-                <label for="rating-3" class="rating-label">
-                    <input type="radio" id="rating-3" name="rating" value="3" required> ★★★
-                </label>
-            
-                <label for="rating-4" class="rating-label">
-                    <input type="radio" id="rating-4" name="rating" value="4" required> ★★★★
-                </label>
-            
-                <label for="rating-5" class="rating-label">
-                    <input type="radio" id="rating-5" name="rating" value="5" required> ★★★★★
-                </label>
-            </fieldset>
+        <!--Overall Rating-->
+        <fieldset class="rating-section">
+            <legend>Overall Rating</legend>
+        
+            <label for="rating-1" class="rating-label">
+                <input type="radio" id="rating-1" name="rating" value="1" required> ★
+            </label>
+        
+            <label for="rating-2" class="rating-label">
+                <input type="radio" id="rating-2" name="rating" value="2" required> ★★
+            </label>
+        
+            <label for="rating-3" class="rating-label">
+                <input type="radio" id="rating-3" name="rating" value="3" required> ★★★
+            </label>
+        
+            <label for="rating-4" class="rating-label">
+                <input type="radio" id="rating-4" name="rating" value="4" required> ★★★★
+            </label>
+        
+            <label for="rating-5" class="rating-label">
+                <input type="radio" id="rating-5" name="rating" value="5" required> ★★★★★
+            </label>
+        </fieldset>
 
-            <!--Date of Installation-->
+        <!--Date of Installation-->
 
-            <label for="date">Date of Installation</label>
-            <input type="date" id="date" name="date" class="section" required>
+        <label for="date">Date of Installation</label>
+        <input type="date" id="date" name="date" class="section" required>
 
-            <!--Useful Features-->
-            <fieldset class="section_xd">   
-                <legend>Which features did you find useful in the product? </legend>
-                <span class="note">(Select all that apply)</span>
-                <label class="checkboxs"><input type="checkbox" id="option1" name="features[]" value="durability"> Durability</label>
-                <label class="checkboxs"><input type="checkbox" id="option2" name="features[]" value="easeofuse"> Ease of Use</label>
-                <label class="checkboxs"><input type="checkbox" id="option3" name="features[]" value="performance"> Performance</label>
-                <label class="checkboxs"><input type="checkbox" id="option4" name="features[]" value="design"> Design</label> 
-            </fieldset>
+        <!--Useful Features-->
+        <fieldset class="section_xd">   
+            <legend>Which features did you find useful in the product? </legend>
+            <span class="note">(Select all that apply)</span>
+            <label class="checkboxs"><input type="checkbox" id="option1" name="features[]" value="durability"> Durability</label>
+            <label class="checkboxs"><input type="checkbox" id="option2" name="features[]" value="easeofuse"> Ease of Use</label>
+            <label class="checkboxs"><input type="checkbox" id="option3" name="features[]" value="performance"> Performance</label>
+            <label class="checkboxs"><input type="checkbox" id="option4" name="features[]" value="design"> Design</label> 
+        </fieldset>
 
-            <!--Written Review-->
-            <label for="comment">Written Review</label>
-            <textarea name="comment" id="comment" rows="4" cols="50"
-                placeholder="Write your message here..." class="section"></textarea>
-
-
-            <!--User Name-->
-            <label for="username">Your Name <span class="note">(Optional)</span></label>
-            <input type="text" name="username" id="username" class="section">
+        <!--Written Review-->
+        <label for="comment">Written Review</label>
+        <textarea name="comment" id="comment" rows="4" cols="50"
+            placeholder="Write your message here..." class="section"></textarea>
 
 
-            <!--Form Submission button-->
-            <input type="submit" value="Send it!" class="section">
-        </form>
+        <!--User Name-->
+        <label for="username">Your Name <span class="note">(Optional)</span></label>
+        <input type="text" name="username" id="username" class="section">
 
 
-
-    </main>
-
-
+        <!--Form Submission button-->
+        <input type="submit" value="Send it!" class="section">
+    </form>
     <footer>
         <p> &copy; <span id="currentyear"></span> | Rogelio Lizardo Guerra Cespedes | Peru</p>
         <p> Last Modification: <span id="lastModified"></span></p>
