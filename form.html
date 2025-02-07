@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rogelio Guerra">
+    <meta name="description" content="Html Form from W05 WDD131">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product Review</title>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method='get' action="review.html">
+
+            <!--Select Element-->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" class="section">
+                <!--Example: <option value="playstation5">PlayStation 5</option>-->
+            </select>
+
+            <!--Overall Rating-->
+            <fieldset class="rating-section">
+                <legend>Overall Rating</legend>
+            
+                <label for="rating-1" class="rating-label">
+                    <input type="radio" id="rating-1" name="rating" value="1" required> ★
+                </label>
+            
+                <label for="rating-2" class="rating-label">
+                    <input type="radio" id="rating-2" name="rating" value="2" required> ★★
+                </label>
+            
+                <label for="rating-3" class="rating-label">
+                    <input type="radio" id="rating-3" name="rating" value="3" required> ★★★
+                </label>
+            
+                <label for="rating-4" class="rating-label">
+                    <input type="radio" id="rating-4" name="rating" value="4" required> ★★★★
+                </label>
+            
+                <label for="rating-5" class="rating-label">
+                    <input type="radio" id="rating-5" name="rating" value="5" required> ★★★★★
+                </label>
+            </fieldset>
+
+            <!--Date of Installation-->
+
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date" class="section" required>
+
+            <!--Useful Features-->
+            <fieldset class="section_xd">   
+                <legend>Which features did you find useful in the product? </legend>
+                <span class="note">(Select all that apply)</span>
+                <label class="checkboxs"><input type="checkbox" id="option1" name="features[]" value="durability"> Durability</label>
+                <label class="checkboxs"><input type="checkbox" id="option2" name="features[]" value="easeofuse"> Ease of Use</label>
+                <label class="checkboxs"><input type="checkbox" id="option3" name="features[]" value="performance"> Performance</label>
+                <label class="checkboxs"><input type="checkbox" id="option4" name="features[]" value="design"> Design</label> 
+            </fieldset>
+
+            <!--Written Review-->
+            <label for="comment">Written Review</label>
+            <textarea name="comment" id="comment" rows="4" cols="50"
+                placeholder="Write your message here..." class="section"></textarea>
+
+
+            <!--User Name-->
+            <label for="username">Your Name <span class="note">(Optional)</span></label>
+            <input type="text" name="username" id="username" class="section">
+
+
+            <!--Form Submission button-->
+            <input type="submit" value="Send it!" class="section">
+        </form>
+
+
+
+    </main>
+
+
+    <footer>
+        <p> &copy; <span id="currentyear"></span> | Rogelio Lizardo Guerra Cespedes | Peru</p>
+        <p> Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

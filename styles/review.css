@@ -1,0 +1,71 @@
+/*This is for the neccesary colors of the design*/
+:root {
+    --primary-color: #710627;
+    --secondary-color: #d7d7f0;
+    --background-color: #28587B;
+}
+
+/*This is for family font-size*/
+:root {
+    --font-family-headers: "Merriweather", serif;
+    --font-family-paragraph: "Roboto Condensed", serif;
+}
+
+/*This is useful and easy for mantain the elements in the center*/
+* {
+    margin: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    max-width: 400px; 
+    margin: 0 auto; /* Center the content */
+    padding: 0;
+}
+
+/*Header of the form*/
+header {
+    background-color: var(--background-color);
+    font-family: var(--font-family-headers);
+    text-align: center;
+    color: white;
+    padding: 1em;
+}
+
+main {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+
+footer {
+    background-color: var(--background-color);
+    font-family: var(--font-family-paragraph);
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    padding: 0.8rem; /* Solo espacio dentro del footer */
+    
+    bottom: 0;
+}
