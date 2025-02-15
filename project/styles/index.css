@@ -1,0 +1,230 @@
+:root {
+    --primary-color: #2E0014;
+    --secondary-color: #9197AE;
+    --background-color: #EEEEEE;
+    --font-family-principal: "Bebas Neue", serif;
+    --font-family-text: "Raleway", serif;
+    --third-color:#27474E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*To erase the awful part of the naw*/
+a {
+    text-decoration: none;  
+}
+ul{
+    list-style: none;
+}
+
+/*To create and organized the nav*/
+
+.navi {
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: var(--background-color);
+    font-family: var(--font-family-text)
+}
+
+.navi a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	color: var(--primary-color);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navi a:hover, navi a:active {
+	background-color: var(--secondary-color);
+	color: var(--background-color);
+}
+
+.show li {
+	display: block;
+}
+.navigation {
+    align-items: center;
+}
+
+
+
+/*This part of the code is for The above part of the html file*/
+
+header{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+h1{
+    font-family: var(--font-family-principal);
+    font-size:45px;
+}
+
+h2{
+    font-family: var(--font-family-principal);
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+/*This is for the design of the main of the html*/
+
+
+/*Section 1*/
+.section-1{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    height:90vh;
+    gap: 30px;
+    padding: 1em 1em 0;
+}
+
+.section-1 div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.section-1 div p {
+    font-family: var(--font-family-text);
+    font-size: 20px;
+}
+
+.hero-image{
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*Section 2*/
+.section-2{
+    height: 40vh;
+    background-color: var(--third-color);
+    color: var(--background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20%;
+    box-shadow: 0 0 30px black
+}
+
+.section-2 h2 {
+    color: var(--background-color)
+}
+
+.section-2 p {
+    font-family: var(--font-family-text);
+    font-weight: bold;
+}
+
+/*Section 3*/
+.section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3em;
+    text-align: center;
+    gap: 30px;
+}
+
+.section-3 figure{
+    padding: 1rem;
+    background-color: var(--background-color);
+    font-family: var(--font-family-text);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px black;
+}
+
+.section-3 h2{
+    grid-column: 1/4;
+}
+
+.section-3 figure img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/*This code is for the footer of the pages*/
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    font-family: var(--font-family-text);
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer2 h1{
+    flex: 1;
+    text-align: left;
+}
+
+.footer2 nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navi-2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navi-2 a{
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.footer-social{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.footer-social img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+@media (min-width: 800px) {
+    .navi {
+		display: flex;
+        height: 100%;
+        align-items: center;
+	}
+	.navi li {
+		display: block;
+		flex: 1 1 100%;
+        
+	}
+	.navi a {
+		text-align: center;
+        height: 100%;
+	}
+}

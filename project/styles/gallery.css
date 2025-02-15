@@ -1,0 +1,302 @@
+:root {
+    --primary-color: #2E0014;
+    --secondary-color: #9197AE;
+    --background-color: #EFF6EE;
+    --font-family-principal: "Bebas Neue", serif;
+    --font-family-text: "Raleway", serif;
+    --third-color:#27474E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*To erase the awful part of the naw*/
+a {
+    text-decoration: none;  
+}
+ul{
+    list-style: none;
+}
+
+/*To create and organized the nav*/
+
+.navi {
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: var(--background-color);
+    font-family: var(--font-family-text)
+}
+
+.navi a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	color: var(--primary-color);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navi a:hover, navi a:active {
+	background-color: var(--secondary-color);
+	color: var(--background-color);
+}
+.show ul{
+    padding: 10px;
+    background-color: var(--third-color);
+}
+
+.show li {
+	display: block;
+}
+.navigation {
+    align-items: center;
+}
+
+/*This part of the code is for The above part of the html file*/
+
+header{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+h1{
+    font-family: var(--font-family-principal);
+    font-size:45px;
+}
+
+h2{
+    font-family: var(--font-family-principal);
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+/*This part is for the main of th html*/
+.section-1 {
+    position: relative;
+    height: 400px;
+}
+
+.section-1  picture{
+    display: block;
+}
+
+.section-1 picture img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+
+.section-1  h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    padding: 1rem;
+}
+
+.order {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    padding: 1rem;
+    gap: 10px;
+}
+
+/*This is for organizing the images and the caption of the page*/
+#templecard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    font-family: var(--font-family-text);
+}
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+figcaption{
+    text-align: center;
+}
+div {
+	margin: 0 0 1rem;
+}
+
+/*This is for the three lines in the page to make it absolute in the top right of the page*/
+#menu::before {
+	content: "≡"; 
+    font-size: 2rem; 
+}
+#menu.show::before {
+	content: "Filter";
+}
+
+/*The second navigation part of the page*/
+.second-navi {
+    font-family: var(--font-family-text);
+}
+.second-navi ul{
+    background-color: var(--third-color);
+    padding: 10px;
+}
+
+.navigation {
+	margin: 0 auto;
+	max-width: 760px;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--background-color);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+.navigation a:hover, navigation a:active {
+	text-decoration: lightseagreen;
+	background-color: #eee;
+	color: #000;
+}
+.show li {
+	display: block;
+    
+}
+
+
+/*This part is for editing images from javascript*/
+
+
+section {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #000;
+	padding: 20px;
+	justify-content: space-between;
+	min-height: 350px;
+	background-color: #e4e4e4d3;
+	box-shadow: 0 0 10px black
+}
+
+section img {
+	margin: 0 auto;
+}
+h3{
+	text-align: center;
+	font-family: var(--font-family-principal);
+	font-size: 1.5em;
+}
+p{
+	text-align: center;
+}
+.label{
+	color: var(--primary-color);
+	
+	font-weight: bold;
+}
+/*This code is for the footer of the pages*/
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    font-family: var(--font-family-text);
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer2 h1{
+    flex: 1;
+    text-align: left;
+}
+
+.footer2 nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navi-2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navi-2 a{
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.footer-social{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.footer-social img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+@media (min-width: 800px) {
+    .navi {
+		display: flex;
+        height: 100%;
+        align-items: center;
+	}
+	.navi li {
+		display: block;
+		flex: 1 1 100%;
+        
+	}
+	.navi a {
+		text-align: center;
+        height: 100%;
+	}
+    /*For erase and mantain the navigation bar in the computer screen*/
+    .navigation {
+		display: flex;
+        flex-direction: column;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+    /*To erase the part of the three lines in the page*/
+    #menu::before {
+        content: none;
+    }
+    #menu.show::before {
+	content: none;
+    }
+
+}

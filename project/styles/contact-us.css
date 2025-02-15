@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #2E0014;
+    --secondary-color: #9197AE;
+    --background-color: #EFF6EE;
+    --font-family-principal: "Bebas Neue", serif;
+    --font-family-text: "Raleway", serif;
+    --third-color:#27474E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*To erase the awful part of the naw*/
+a {
+    text-decoration: none;  
+}
+ul{
+    list-style: none;
+}
+
+/*To create and organized the nav*/
+
+.navi {
+	margin: 0 auto;
+	max-width: 760px;
+    background-color: var(--background-color);
+    font-family: var(--font-family-text)
+}
+
+.navi a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	color: var(--primary-color);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navi a:hover, navi a:active {
+	background-color: var(--secondary-color);
+	color: var(--background-color);
+}
+
+.show li {
+	display: block;
+}
+.navigation {
+    align-items: center;
+}
+
+/*This is the code for the hero image*/
+main{
+    position: relative;
+    height: 90vh;
+}
+picture img {
+    display: block;;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.form-box {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background-color);
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 15px;
+    font-family: var(--font-family-text);
+    justify-items: center;
+    align-items: center;
+}
+
+.form-box img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+h2 {
+    font-family: var(--font-family-principal);
+    font-size: 50px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.note {
+    color: var(--primary-color);
+    font-weight: lighter;
+}
+.form-box form {
+    padding: 0 0 1em;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+
+fieldset label {
+    display: flex;
+    font-weight: lighter;
+}
+
+input[type="radio"]{
+    margin: 0 6px 0 0;
+}
+
+#name, 
+#lname,
+#number,
+#username,
+fieldset{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0 2em;
+}
+
+input[type="submit"]{
+    background-color: var(--primary-color);
+    width: 150px;
+    margin: 0 auto;
+    color: var(--background-color);
+    padding: 5px;
+    border-radius: 0.5em;
+    font-size: 1.3em;
+    font-family: var(--font-family-text);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--third-color);
+}
+
+/*This part of the code is for The above part of the html file*/
+
+header{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+h1{
+    font-family: var(--font-family-principal);
+    font-size:45px;
+}
+
+h2{
+    font-family: var(--font-family-principal);
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+
+/*This code is for the footer of the pages*/
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1em;
+    font-family: var(--font-family-text);
+}
+.footer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer2 h1{
+    flex: 1;
+    text-align: left;
+}
+
+.footer2 nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navi-2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.navi-2 a{
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.footer-social{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.footer-social img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+@media (min-width: 800px) {
+    .navi {
+		display: flex;
+        height: 100%;
+        align-items: center;
+	}
+	.navi li {
+		display: block;
+		flex: 1 1 100%;
+        
+	}
+	.navi a {
+		text-align: center;
+        height: 100%;
+	}
+}
