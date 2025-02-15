@@ -1,11 +1,15 @@
+/*This part works for the navigation part of the page. It will make appear that and desappear as well with a event 'click' */
+const mainnav2 = document.querySelector('.navigation')
+const button2 = document.querySelector('#menu');
 
-
-
-
+button2.addEventListener('click', () => {
+	mainnav2.classList.toggle('show');
+	button2.classList.toggle('show');
+});
 
 /*This part works for the navigation part of the page. It will make appear that and desappear as well with a event 'click' */
-const mainnav = document.querySelector('.navigation')
-const button = document.querySelector('#menu');
+const mainnav = document.querySelector('.navigations')
+const button = document.querySelector('#menu2');
 
 button.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
