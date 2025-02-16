@@ -238,6 +238,7 @@ section {
 	box-shadow: 0 0 10px black;
     font-size: 1.5rem;
     gap: 10px;
+    width: 90%;
 }
 
 section img {
@@ -339,6 +340,9 @@ footer{
     section{
         font-size: 100%;
         gap: 0;
+        width: auto; /* O el valor que prefieras */
+        max-width: 100%;
+        min-height: 240px;
     }
 
     /*headers*/
