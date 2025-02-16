@@ -9,12 +9,13 @@ button2.addEventListener('click', () => {
 
 /*This part works for the navigation part of the page. It will make appear that and desappear as well with a event 'click' */
 const mainnav = document.querySelector('.navigations')
-const button = document.querySelector('#menu2');
+const button = document.querySelector('.second-navi');
 
 button.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	button.classList.toggle('show');
+	mainnav.classList.toggle('show2');
+	button.classList.toggle('show2');
 });
+
 
 const temples = [
 	{

@@ -24,6 +24,27 @@ ul{
     list-style: none;
 }
 
+/*This part of the code is for The above part of the html file*/
+
+header{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    display: grid;
+   
+}
+h1{
+    font-family: var(--font-family-principal);
+    color: var(--background-color);
+    font-size:40px;
+}
+
+h2{
+    font-family: var(--font-family-principal);
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
 /*This is for the design with JavaScript*/
 #menu {
 	font-size: 2rem;
@@ -76,31 +97,14 @@ ul{
 	display: block;
 }
 
-/*This part of the code is for The above part of the html file*/
 
-header{
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 1rem;
-    display: grid;
-   
-}
-h1{
-    font-family: var(--font-family-principal);
-    color: var(--background-color);
-    font-size:40px;
-}
 
-h2{
-    font-family: var(--font-family-principal);
-    font-size: 35px;
-    color: var(--primary-color);
-}
 
 /*This part is for the main of th html*/
 .section-1 {
     position: relative;
     height: 400px;
+    margin: 0;
 }
 
 .section-1  picture{
@@ -123,16 +127,19 @@ h2{
     background-color: var(--background-color);
     padding: 1rem;
 }
+/*Second part of the html*/
 
 .order {
     display: grid;
     grid-template-columns: 0.2fr 1fr;
     padding: 1rem;
-    gap: 10px;
+    margin: 1rem 0 0;
+    gap: 20px;
 }
 
 /*This is for organizing the images and the caption of the page*/
 #templecard{
+    grid-column: 1/3 ;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
@@ -154,25 +161,45 @@ div {
 /*To erase*/
 
 /*This is for the three lines in the page to make it absolute in the top right of the page*/
-#menu2::before {
-	content: "≡"; 
-    font-size: 2rem; 
+.second-navi::before {
+    font-family: var(--font-family-text);
+	content: "Filter"; 
+    background-color: var(--third-color);
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--background-color);
+    padding: 1rem;
+    border-radius: 15px;
 }
-#menu2.show::before {
-	content: "Filter";
+.second-navi.show2::before {
+    text-align: center;
+	content: "≡";
+    font-size: 3rem;
+    padding: 0;
+    border-radius: 0;
+    background-color: white;
+    color: var(--third-color);
 }
 
 /*The second navigation part of the page*/
 .second-navi {
     font-family: var(--font-family-text);
+    grid-column: 1/3;
 }
 .second-navi ul{
+    background-color: white;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+
+.second-navi ul.show2{
     background-color: var(--third-color);
     padding: 10px;
 }
 
+
 .navigations {
-	margin: 0 auto;
+	margin: 0 ;
 	max-width: 760px;
 }
 .navigations li {
@@ -193,17 +220,13 @@ div {
 	background-color: #eee;
 	color: #000;
 }
-.show li {
+.show2 li {
 	display: block;
     
 }
 
-/*To erase*/
-
 
 /*This part is for editing images from javascript*/
-
-
 section {
 	display: flex;
 	flex-direction: column;
@@ -231,8 +254,8 @@ p{
 	
 	font-weight: bold;
 }
-/*This code is for the footer of the pages*/
 
+/*This code is for the footer of the pages*/
 footer{
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -308,10 +331,10 @@ footer{
 
 @media (min-width: 800px) {
     /*To resize the font size of all the html*/
-
     html {
         font-size: 100%; 
     }
+
     /*headers*/
     header{
         background-color: var(--primary-color);
@@ -345,14 +368,60 @@ footer{
 		text-align: center;
         height: 100%;
 	}
-
     /*To erase the part of the three lines in the page*/
     #menu::before {
         content: none;
     }
-    #menu.show::before {
-	content: none;
+    #menu.show2::before {
+	    content: none;
     }
+
+    .order{
+        margin: 0;
+    }
+    
+
+    /*For erase and mantain the navigation bar in the computer screen*/
+    .navigations {
+		display: flex;
+        height: 100%;
+        align-items: center;
+	}
+
+	.navigations li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigations a {
+		text-align: center;
+        height: 100%;
+        font-size: 1.2rem;
+	}
+    .second-navi{
+        align-self: center;  /* Center vertically */
+        justify-self:center;
+    }
+    .second-navi ul{
+        background-color: var(--third-color);
+        padding: 0;
+        margin: 0;
+        width: 1000px;
+        
+    }
+    .second-navi li{
+        background-color: var(--third-color);
+        padding: 0;
+        margin: 0;
+    }
+    .second-navi::before {
+        content: none;
+    }
+    .second-navi.show2::before {
+        content: none;
+    }
+	
+
+    
 
     /*Footer large view*/
     .footer2{
