@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rogelio Guerra Cespedes">
-    <meta name="description" content="Diersac Distribution's contact-us page">
+    <meta name="description" content="Diersac Distribution's review page">
     <link rel="stylesheet" href="styles/contact-us.css">
     <link rel="stylesheet" href="styles/contact-us-large.css">
-    <script src="scripts/contact-us.js" defer></script>
+    <script src="scripts/review.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Diersac Distribution | Contact Us</title>
+    <title>Diersac Distribution | Review Page</title>
 </head>
 <body>
     <header id="menu">
@@ -25,45 +25,15 @@
         </nav>
     </header>
 
-    <main>
-
-        <picture>
-            <img src="images/background.webp" alt="almacen">
-        </picture>
-
-        <div class="form-box">
-            <img src="images/second-image.webp"  alt="callcenter">
-            <form id="contactForm" method="get" action="review.html">
-                <h2>This is the beginning of a great story!</h2>
-            
-                <label for="name">Type your name</label>
-                <input type="text" name="name" id="name" required>
-            
-                <label for="lname">Last name <span class="note">(Optional)</span></label>
-                <input type="text" name="lname" id="lname">
-            
-                <label for="number">Write your phone number</label>
-                <input type="tel" name="number" id="number" placeholder="(901) 456-4561" required>
-            
-                <fieldset>
-                    <legend>What way would you like us to contact you?</legend>
-                    <label for="way-1">
-                        <input type="radio" id="way-1" name="contact-method" value="Whatsapp Text" required> Whatsapp Text
-                    </label>
-            
-                    <label for="way-2">
-                        <input type="radio" id="way-2" name="contact-method" value="Phone Call" required> Phone Call
-                    </label>
-            
-                    <label for="way-3">
-                        <input type="radio" id="way-3" name="contact-method" value="Whatsapp Call" required> Whatsapp Call
-                    </label>
-                </fieldset>
-            
-                <button type="submit" id="send" class="btn-submit">Contact Me</button>
-            </form>
-        </div>
+    <main class="review">
+        <section>
+            <h2>Diersac Distribution Feedback Confirmation</h2>
+            <p>Thank you for sharing your experience with Diersac Distribution.  
+               Your feedback helps us improve our services. We may reach out to you soon to follow up and ensure we meet your expectations.</p>
+        </section>
     </main>
+
+
     <footer>
         <div class="footer2">
             
@@ -95,6 +65,7 @@
             <p>WDD131</p>
         </div>
 
-    </footer>    
+    </footer>  
+    
 </body>
 </html>

@@ -175,7 +175,7 @@ fieldset{
     margin: 0 0 2rem;
 }
 
-input[type="submit"]{
+button[type="submit"]{
     background-color: var(--primary-color);
     width: 150px;
     margin: 0 auto;
@@ -186,10 +186,31 @@ input[type="submit"]{
     font-family: var(--font-family-text);
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: var(--third-color);
 }
 
+/*The main part of the review.html*/
+.review{
+    height: 65vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.review section h2 {
+    font-family: var(--font-family-text);
+    font-size: 2rem;
+}
+
+
+.review section p {
+    font-family: var(--font-family-text);
+    text-align: center;
+    font-size: 1.2rem;
+}
 
 
 /*This code is for the footer of the pages*/
@@ -346,6 +367,12 @@ footer{
         width: 100%;
         height: 100%;
         object-fit: cover
+    }
+    .review{
+        align-items: center;
+    }
+    .review section {
+        width: 800px;
     }
 
 }
