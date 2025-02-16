@@ -17,143 +17,121 @@ button.addEventListener('click', () => {
 });
 
 
-const temples = [
+const products = [
 	{
-	templeName: "Aba Nigeria",
-	location: "Aba, Nigeria",
-	dedicated: "2005, August, 7",
-	area: 11500,
+        productNAme: "Green 'Suave' Paper",
+        price: "S/. 20.00",
+        code: "paper",
+        imageUrl: "images/paper1.webp" // Se corrigió la coma
+    },
+	{
+	productNAme: "Orange 'Suave' Paper",
+	price: "S/. 13.00",
+    code: "paper", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+	"images/paper2.webp",
 	},
 	{
-	templeName: "Manti Utah",
-	location: "Manti, Utah, United States",
-	dedicated: "1888, May, 21",
-	area: 74792,
+	productNAme: "Tuna Florida Filet",
+	price: "S/. 5.00",
+    code: "tuna", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+	"images/tuna1.webp"
 	},
 	{
-	templeName: "Payson Utah",
-	location: "Payson, Utah, United States",
-	dedicated: "2015, June, 7",
-	area: 96630,
+	productNAme: "Tuna Primor Filet",
+	price: "S/. 4.80",
+    code: "tuna", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+	"images/tuna2.webp"
 	},
 	{
-	templeName: "Yigo Guam",
-	location: "Yigo, Guam",
-	dedicated: "2020, May, 2",
-	area: 6861,
+	productNAme: "Sporade Red 1.5lt",
+	price: "S/. 24.00",
+    code: "drink", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+	"images/drink1.webp"
 	},
 	{
-	templeName: "Washington D.C.",
-	location: "Kensington, Maryland, United States",
-	dedicated: "1974, November, 19",
-	area: 156558,
+	productNAme: "INKA COLA 3LT",
+	price: "S/. 37.00",
+    code: "drink", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+	"images/drink2.webp"
 	},
 	{
-	templeName: "Lima Perú",
-	location: "Lima, Perú",
-	dedicated: "1986, January, 10",
-	area: 9600,
+	productNAme: "Guaranita 500ml",
+	price: "S/. 20.00",
+    code: "drink",
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+	"images/drink3.webp"
 	},
 	{
-	templeName: "Mexico City Mexico",
-	location: "Mexico City, Mexico",
-	dedicated: "1983, December, 2",
-	area: 116642,
+	productNAme: "Morochas",
+	price: "S/. 8.00",
+    code: "cookie", 
 	imageUrl:
-	"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+	"images/cookie1.webp"
 	},
 	{
-	templeName: "Houston Texas",
-	location: "Klein, Texas, USA",
-	dedicated: "2000, August, 26",
-	area: 33970,
-	imageUrl:
-	"https://churchofjesuschristtemples.org/assets/img/temples/houston-texas-temple/houston-texas-temple-23478.jpg"
-	},
-	{
-	templeName: "Cedar City Utah",
-	location: "Cedar City, Utah, USA",
+	productNAme: "Picaras",
+	price: "S/. 10.00",
 	dedicated: "2015, August, 8",
+    code: "cookie", 
 	area: 42657,
 	imageUrl:
-	"https://churchofjesuschristtemples.org/assets/img/temples/cedar-city-utah-temple/cedar-city-utah-temple-33347-main.jpg"	
-	},
-	{
-	templeName: "Antofagasta Chile",
-	location: "Antofagasta, Chile",
-	dedicated: "2020, November, 27",
-	area: 23000,
-	imageUrl:
-	"https://churchofjesuschristtemples.org/assets/img/temples/antofagasta-chile-temple/antofagasta-chile-temple-48608-main.jpg"	
+	"images/cookie2.webp"
 	},
 ];
 
-createTempleCard(temples);
+createProductcart(products);
 
-const oldLink = document.querySelector("#toilet-paper");
-const newLink = document.querySelector("#drinks");
-const largeLink = document.querySelector("#tunas");
-const smallLink = document.querySelector("#cookies");
-const homeLink = document.querySelector("#all");
+const toilet = document.querySelector("#toilet-paper");
+const drinks = document.querySelector("#drinks");
+const tunas = document.querySelector("#tunas");
+const cookies = document.querySelector("#cookies");
+const all = document.querySelector("#all");
 
-oldLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
+toilet.addEventListener("click", () => {
+	createProductcart(products.filter(product => product.code == "paper"));
 });
 
-newLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
+drinks.addEventListener("click", () => {
+	createProductcart(products.filter(product => product.code == "drink"));
 });
 
-largeLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => parseInt(temple.area) > 90000));
+tunas.addEventListener("click", () => {
+	createProductcart(products.filter(product => product.code == "tuna"));
 });
 
-smallLink.addEventListener("click", () => {
-	createTempleCard(temples.filter(temple => parseInt(temple.area) < 10000));
+cookies.addEventListener("click", () => {
+	createProductcart(products.filter(product => product.code == "cookie"));
 });
 
-homeLink.addEventListener("click", () => {
-	createTempleCard(temples);
+all.addEventListener("click", () => {
+	createProductcart(products);
 });
 
 
 
-function createTempleCard(filteredTemples) {
+function createProductcart(filteredproducts) {
     document.querySelector("#templecard").innerHTML = "";
     
-    filteredTemples.forEach(temple => {
+    filteredproducts.forEach(product => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
-        let location = document.createElement("p");
-        let dedication = document.createElement("p");
-        let area = document.createElement("p");
+        let price = document.createElement("p");
         let img = document.createElement("img");
 
-        name.textContent = temple.templeName;
-        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+        name.textContent = product.productNAme;
+        price.innerHTML = `<span class="label">Price:</span> ${product.price}`;
 
-        img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("src", product.imageUrl);
+        img.setAttribute("alt", `${product.productNAme} Temple`);
         img.setAttribute("loading", "lazy");
 
         card.appendChild(name);
-        card.appendChild(location);
-        card.appendChild(dedication);
-        card.appendChild(area);
+        card.appendChild(price);
         card.appendChild(img);
 
         document.querySelector("#templecard").appendChild(card);
